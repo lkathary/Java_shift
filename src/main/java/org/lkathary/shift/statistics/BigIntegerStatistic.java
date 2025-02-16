@@ -1,6 +1,5 @@
 package org.lkathary.shift.statistics;
 
-import org.lkathary.shift.models.CommandLine;
 import org.lkathary.shift.models.TypeStatistic;
 
 import java.math.BigInteger;
@@ -25,10 +24,10 @@ public class BigIntegerStatistic extends BaseStatistic<BigInteger> {
 
     @Override
     public void show(TypeStatistic typeStatistic) {
-        if (typeStatistic == TypeStatistic.SHORT_STATISTIC) {
+        if (typeStatistic == TypeStatistic.SHORT_STATISTICS) {
             System.out.println("->\nShort statistic for integers: " + count + " records");
         }
-        if (typeStatistic == TypeStatistic.FULL_STATISTIC) {
+        if (typeStatistic == TypeStatistic.FULL_STATISTICS) {
             System.out.println("->\nFull statistic for integers: " + count + " records");
             if (count > 0) {
                 System.out.println("Sum: " + sum + " Min: " + min + " Max: " + max

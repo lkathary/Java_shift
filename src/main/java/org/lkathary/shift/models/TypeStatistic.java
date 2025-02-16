@@ -1,6 +1,7 @@
 package org.lkathary.shift.models;
 
 public enum TypeStatistic {
-    FULL_STATISTIC,
-    SHORT_STATISTIC;
+    FULL_STATISTICS,
+    SHORT_STATISTICS,
+    NONE_STATISTICS
 }

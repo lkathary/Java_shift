@@ -1,6 +1,5 @@
 package org.lkathary.shift.statistics;
 
-import org.lkathary.shift.models.CommandLine;
 import org.lkathary.shift.models.TypeStatistic;
 
 public class LongStatistic extends BaseStatistic<Long> {
@@ -23,10 +22,10 @@ public class LongStatistic extends BaseStatistic<Long> {
 
     @Override
     public void show(TypeStatistic typeStatistic) {
-        if (typeStatistic == TypeStatistic.SHORT_STATISTIC) {
+        if (typeStatistic == TypeStatistic.SHORT_STATISTICS) {
             System.out.println("->\nShort statistic for floats: " + count + " records");
         }
-        if (typeStatistic == TypeStatistic.FULL_STATISTIC) {
+        if (typeStatistic == TypeStatistic.FULL_STATISTICS) {
             System.out.println("->\nFull statistic for floats: " + count + " records");
             if (count > 0) {
                 System.out.println("Sum: " + sum + " Min: " + min + " Max: " + max

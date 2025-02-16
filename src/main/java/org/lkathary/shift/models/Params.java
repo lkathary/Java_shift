@@ -34,7 +34,8 @@ public class Params {
                 (args.getPrefix() != null ? args.getPrefix() : "") +
                 TypeFile.STRING_FILE.getTitle();
 
-        typeStatistic = args.getFullStat() ? TypeStatistic.FULL_STATISTIC : TypeStatistic.SHORT_STATISTIC;
+        typeStatistic = args.getFullStat() ? TypeStatistic.FULL_STATISTICS :
+                args.getShortStat() ? TypeStatistic.SHORT_STATISTICS : TypeStatistic.NONE_STATISTICS;
         fileList = args.getFiles();
     }
 
